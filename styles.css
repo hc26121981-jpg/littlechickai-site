@@ -206,6 +206,12 @@ a {
   border: 1px solid rgba(56, 189, 248, 0.25);
 }
 
+.chip-both {
+  color: var(--accent);
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.28);
+}
+
 .chip-hk {
   color: var(--hk);
   background: var(--hk-bg);
