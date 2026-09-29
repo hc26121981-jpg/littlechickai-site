@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260929-hero" />
+  <link rel="stylesheet" href="styles.css?v=20260929-date" />
 </head>
 <body>
   <a class="skip-link" href="#main">跳至內容</a>
@@ -69,6 +69,20 @@
         </div>
       </div>
 
+      <div class="date-toolbar" aria-label="按日子搜尋">
+        <label class="date-field">
+          <span class="date-label">月份</span>
+          <select id="month-filter" aria-label="按月份篩選">
+            <option value="">全部月份</option>
+          </select>
+        </label>
+        <label class="date-field">
+          <span class="date-label">日子</span>
+          <input type="date" id="date-filter" aria-label="按日子篩選" />
+        </label>
+        <button type="button" class="date-clear" id="date-clear" hidden>清除日子</button>
+      </div>
+
       <div class="post-grid" id="post-grid">
         <!-- cards injected / static below -->
       </div>
@@ -94,6 +108,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20260929-hero"></script>
+  <script src="app.js?v=20260929-date"></script>
 </body>
 </html>
