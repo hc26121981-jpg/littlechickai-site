@@ -154,9 +154,10 @@ function postMatchesFilter(post, filter) {
 }
 
 function chipFor(m) {
-  return m === "us"
-    ? '<span class="chip chip-us">美股</span>'
-    : '<span class="chip chip-hk">港股</span>';
+  const key = String(m).toLowerCase();
+  if (key === "us") return '<span class="chip chip-us">美股</span>';
+  if (key === "hk") return '<span class="chip chip-hk">港股</span>';
+  return "";
 }
 
 function excerptFor(post, filter) {
