@@ -138,6 +138,39 @@ const filterBtns = document.querySelectorAll(".filter-btn");
 
 let currentFilter = "all";
 
+function marketsOf(post) {
+  const fromField = Array.isArray(post.markets)
+    ? post.markets.map((m) => String(m).toLowerCase())
+    : [];
+  const out = [];
+  if (fromField.includes("us") || post.us) out.push("us");
+  if (fromField.includes("hk") || post.hk) out.push("hk");
+  return out.length ? [...new Set(out)] : fromField;
+}
+
+function postMatchesFilter(post, filter) {
+  if (filter === "all") return true;
+  return marketsOf(post).includes(filter);
+}
+
+function chipFor(m) {
+  return m === "us"
+    ? '<span class="chip chip-us">美股</span>'
+    : '<span class="chip chip-hk">港股</span>';
+}
+
+function excerptFor(post, filter) {
+  if (filter === "us" && post.us && post.us.summary) {
+    const s = post.us.summary.replace(/\s+/g, " ").trim();
+    return s.length > 120 ? s.slice(0, 120) + "…" : s;
+  }
+  if (filter === "hk" && post.hk && post.hk.summary) {
+    const s = post.hk.summary.replace(/\s+/g, " ").trim();
+    return s.length > 120 ? s.slice(0, 120) + "…" : s;
+  }
+  return post.excerpt;
+}
+
 function normalizePostsPayload(data) {
   if (Array.isArray(data)) return data;
   if (data && Array.isArray(data.posts)) return data.posts;
@@ -175,43 +208,46 @@ function renderHero() {
   if (heading) heading.textContent = post.title;
   if (lead) lead.textContent = post.excerpt;
   if (tags) {
-    tags.innerHTML = post.markets
-      .map((m) =>
-        m === "us"
-          ? '<span class="chip chip-us">美股</span>'
-          : '<span class="chip chip-hk">港股</span>'
-      )
-      .join("");
+    tags.innerHTML = marketsOf(post).map(chipFor).join("");
   }
 }
 
 function renderCards() {
-  grid.innerHTML = POSTS.map((post) => {
-    const badges = post.markets
-      .map((m) =>
-        m === "us"
-          ? '<span class="chip chip-us">美股</span>'
-          : '<span class="chip chip-hk">港股</span>'
-      )
-      .join("");
-    return `
-      <button type="button" class="post-card" data-id="${post.id}" data-markets="${post.markets.join(",")}" aria-label="閱讀：${post.title}">
+  const visible = POSTS.filter((post) => postMatchesFilter(post, currentFilter));
+  if (!visible.length) {
+    grid.innerHTML =
+      '<p class="empty-filter">呢個市場暫時未有簡報。</p>';
+    return;
+  }
+
+  grid.innerHTML = visible
+    .map((post) => {
+      const markets = marketsOf(post);
+      const showMarkets =
+        currentFilter === "all"
+          ? markets
+          : markets.filter((m) => m === currentFilter);
+      const badges = (showMarkets.length ? showMarkets : markets)
+        .map(chipFor)
+        .join("");
+      const excerpt = excerptFor(post, currentFilter);
+      return `
+      <button type="button" class="post-card" data-id="${post.id}" data-markets="${markets.join(",")}" aria-label="閱讀：${post.title}">
         <div class="post-card-meta">
           <time class="post-date" datetime="${post.date}">${post.date}</time>
           <div class="post-badges">${badges}</div>
         </div>
         <h3>${post.title}</h3>
-        <p class="post-excerpt">${post.excerpt}</p>
+        <p class="post-excerpt">${excerpt}</p>
         <span class="post-cta">閱讀全文 <span aria-hidden="true">→</span></span>
       </button>
     `;
-  }).join("");
+    })
+    .join("");
 
   grid.querySelectorAll(".post-card").forEach((card) => {
     card.addEventListener("click", () => openPost(card.dataset.id));
   });
-
-  applyFilter(currentFilter);
 }
 
 function applyFilter(filter) {
@@ -221,12 +257,11 @@ function applyFilter(filter) {
     btn.classList.toggle("is-active", active);
     btn.setAttribute("aria-selected", active ? "true" : "false");
   });
-
-  grid.querySelectorAll(".post-card").forEach((card) => {
-    const markets = card.dataset.markets.split(",");
-    const show = filter === "all" || markets.includes(filter);
-    card.classList.toggle("is-hidden", !show);
-  });
+  renderCards();
+  if (document.body.classList.contains("showing-detail")) {
+    const openId = location.hash.match(/^#post\/(.+)$/);
+    if (openId) openPost(openId[1]);
+  }
 }
 
 function marketBlock(label, chipClass, data) {
@@ -259,23 +294,28 @@ function openPost(id) {
   const post = POSTS.find((p) => p.id === id);
   if (!post) return;
 
-  const badges = post.markets
-    .map((m) =>
-      m === "us"
-        ? '<span class="chip chip-us">美股</span>'
-        : '<span class="chip chip-hk">港股</span>'
-    )
-    .join(" ");
+  const markets = marketsOf(post);
+  const showUs =
+    currentFilter !== "hk" && (currentFilter === "us" || !!post.us);
+  const showHk =
+    currentFilter !== "us" && (currentFilter === "hk" || !!post.hk);
+  const badgeMarkets =
+    currentFilter === "us"
+      ? ["us"]
+      : currentFilter === "hk"
+        ? ["hk"]
+        : markets;
+  const badges = badgeMarkets.map(chipFor).join(" ");
 
   detailContent.innerHTML = `
     <header class="detail-header">
       <time class="post-date" datetime="${post.date}">${post.dateLabel}</time>
       <h2>${post.title}</h2>
       <div class="post-badges">${badges}</div>
-      <p class="detail-disclaimer">⚠️ 本篇所有數字、漲跌幅與評論均為<strong>示範數據</strong>，並非即時或真實市場行情，亦不構成任何投資建議。</p>
+      <p class="detail-disclaimer">⚠️ 內容來自美股／港股助手簡報彙整，分析≠投資建議。</p>
     </header>
-    ${marketBlock("美股簡報", "chip-us", post.us)}
-    ${marketBlock("港股簡報", "chip-hk", post.hk)}
+    ${showUs ? marketBlock("美股簡報", "chip-us", post.us) : ""}
+    ${showHk ? marketBlock("港股簡報", "chip-hk", post.hk) : ""}
   `;
 
   document.body.classList.add("showing-detail");
@@ -318,7 +358,7 @@ window.addEventListener("hashchange", routeFromHash);
 async function init() {
   POSTS = await loadPosts();
   renderHero();
-  renderCards();
+  applyFilter("all");
   routeFromHash();
 }
 
