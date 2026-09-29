@@ -151,10 +151,7 @@ a {
 .hero-inner {
   max-width: var(--max);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 2rem;
-  align-items: center;
+  display: block;
   padding: 2rem;
   background: linear-gradient(145deg, var(--bg-elevated), var(--bg-card));
   border: 1px solid var(--border);
@@ -215,42 +212,6 @@ a {
   border: 1px solid rgba(251, 191, 36, 0.25);
 }
 
-.spark-card {
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1rem 1.1rem 0.75rem;
-}
-
-.spark-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-bottom: 0.5rem;
-}
-
-.spark-pct {
-  font-family: var(--mono);
-  font-weight: 500;
-}
-
-.spark-pct.up {
-  color: var(--up);
-}
-
-.sparkline {
-  width: 100%;
-  height: 88px;
-}
-
-.spark-note {
-  margin: 0.4rem 0 0;
-  font-size: 0.7rem;
-  color: var(--text-soft);
-  text-align: right;
-}
 
 /* ===== Feed ===== */
 .feed-section {
@@ -613,9 +574,7 @@ body.showing-detail .post-detail {
 /* ===== Responsive ===== */
 @media (max-width: 800px) {
   .hero-inner {
-    grid-template-columns: 1fr;
     padding: 1.35rem;
-    gap: 1.25rem;
   }
 
   .header-meta {
