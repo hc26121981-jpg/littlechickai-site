@@ -390,6 +390,33 @@ a {
   display: none;
 }
 
+.post-time {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--text-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.detail-time {
+  margin: 0.4rem 0 0.75rem;
+  color: var(--text-muted);
+}
+
+.market-asof {
+  margin: -0.35rem 0 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.market-asof time {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+
 .empty-filter {
   grid-column: 1 / -1;
   margin: 0;
