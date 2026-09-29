@@ -137,6 +137,12 @@ const backBtn = document.getElementById("back-btn");
 const filterBtns = document.querySelectorAll(".filter-btn");
 
 let currentFilter = "all";
+let currentMonth = ""; // "YYYY-MM" or ""
+let currentDate = ""; // "YYYY-MM-DD" or ""
+
+const monthFilterEl = document.getElementById("month-filter");
+const dateFilterEl = document.getElementById("date-filter");
+const dateClearBtn = document.getElementById("date-clear");
 
 function marketsOf(post) {
   const fromField = Array.isArray(post.markets)
@@ -151,6 +157,56 @@ function marketsOf(post) {
 function postMatchesFilter(post, filter) {
   if (filter === "all") return true;
   return marketsOf(post).includes(filter);
+}
+
+function postMatchesDate(post) {
+  const d = post.date || "";
+  if (currentDate) return d === currentDate;
+  if (currentMonth) return d.startsWith(currentMonth);
+  return true;
+}
+
+function visiblePosts() {
+  return POSTS.filter(
+    (post) => postMatchesFilter(post, currentFilter) && postMatchesDate(post)
+  );
+}
+
+function monthLabel(ym) {
+  const [y, m] = ym.split("-");
+  return `${y}年${Number(m)}月`;
+}
+
+function populateMonthOptions() {
+  if (!monthFilterEl) return;
+  const months = [
+    ...new Set(
+      POSTS.map((p) => (p.date || "").slice(0, 7)).filter((ym) => ym.length === 7)
+    ),
+  ].sort((a, b) => b.localeCompare(a));
+  const prev = currentMonth;
+  monthFilterEl.innerHTML =
+    '<option value="">全部月份</option>' +
+    months
+      .map(
+        (ym) =>
+          `<option value="${ym}"${ym === prev ? " selected" : ""}>${monthLabel(ym)}</option>`
+      )
+      .join("");
+  if (prev && !months.includes(prev)) {
+    currentMonth = "";
+    monthFilterEl.value = "";
+  }
+}
+
+function syncDateClear() {
+  if (!dateClearBtn) return;
+  dateClearBtn.hidden = !(currentDate || currentMonth);
+}
+
+function applyDateFilters() {
+  syncDateClear();
+  renderCards();
 }
 
 function chipFor(m) {
@@ -229,10 +285,13 @@ function renderHero() {
 }
 
 function renderCards() {
-  const visible = POSTS.filter((post) => postMatchesFilter(post, currentFilter));
+  const visible = visiblePosts();
   if (!visible.length) {
-    grid.innerHTML =
-      '<p class="empty-filter">呢個市場暫時未有簡報。</p>';
+    let msg = "暫時未有符合條件嘅簡報。";
+    if (currentDate) msg = `找不到 ${currentDate} 嘅簡報。`;
+    else if (currentMonth) msg = `找不到 ${monthLabel(currentMonth)} 嘅簡報。`;
+    else if (currentFilter !== "all") msg = "呢個市場暫時未有簡報。";
+    grid.innerHTML = `<p class="empty-filter">${msg}</p>`;
     return;
   }
 
@@ -353,6 +412,39 @@ filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => applyFilter(btn.dataset.filter));
 });
 
+if (monthFilterEl) {
+  monthFilterEl.addEventListener("change", () => {
+    currentMonth = monthFilterEl.value || "";
+    // picking a month clears exact day so you see the whole month
+    if (currentMonth) {
+      currentDate = "";
+      if (dateFilterEl) dateFilterEl.value = "";
+    }
+    applyDateFilters();
+  });
+}
+
+if (dateFilterEl) {
+  dateFilterEl.addEventListener("change", () => {
+    currentDate = dateFilterEl.value || "";
+    if (currentDate) {
+      currentMonth = currentDate.slice(0, 7);
+      if (monthFilterEl) monthFilterEl.value = currentMonth;
+    }
+    applyDateFilters();
+  });
+}
+
+if (dateClearBtn) {
+  dateClearBtn.addEventListener("click", () => {
+    currentDate = "";
+    currentMonth = "";
+    if (dateFilterEl) dateFilterEl.value = "";
+    if (monthFilterEl) monthFilterEl.value = "";
+    applyDateFilters();
+  });
+}
+
 backBtn.addEventListener("click", closePost);
 
 document.addEventListener("keydown", (e) => {
@@ -374,6 +466,8 @@ window.addEventListener("hashchange", routeFromHash);
 
 async function init() {
   POSTS = await loadPosts();
+  populateMonthOptions();
+  syncDateClear();
   renderHero();
   applyFilter("all");
   routeFromHash();
