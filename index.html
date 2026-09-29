@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>美港股日報 · 每日美股 · 港股簡報</title>
+  <meta name="description" content="每日美股與港股市場簡報 — 示範數據，非即時行情" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至內容</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="40" height="40">
+            <defs>
+              <linearGradient id="g" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#0ea5e9"/>
+                <stop offset="100%" stop-color="#22d3ee"/>
+              </linearGradient>
+            </defs>
+            <rect width="40" height="40" rx="10" fill="url(#g)" opacity="0.15"/>
+            <polyline points="6,28 14,18 20,22 28,10 34,14" fill="none" stroke="url(#g)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="34" cy="14" r="2.5" fill="#22d3ee"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="site-title">美港股日報</h1>
+          <p class="site-subtitle">每日美股 · 港股簡報</p>
+        </div>
+      </div>
+      <div class="header-meta">
+        <span class="demo-badge" title="本站所有數字均為示範數據">示範數據 · 非即時行情</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero: 今日焦點 -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">今日焦點 · 2026-09-18</p>
+          <h2 id="hero-heading">科技股回調後企穩，港股科網板塊跟進美股情緒</h2>
+          <p class="hero-lead">
+            美股科技權重股震盪整理，NVIDIA、Tesla 成交活躍；港股阿里巴巴、中芯國際受資金輪動影響。以下為示範簡報，數字僅供版面示意。
+          </p>
+          <div class="hero-tags">
+            <span class="chip chip-us">美股</span>
+            <span class="chip chip-hk">港股</span>
+          </div>
+        </div>
+        <div class="hero-chart" aria-hidden="true">
+          <div class="spark-card">
+            <div class="spark-header">
+              <span>示範走勢</span>
+              <span class="spark-pct up">+1.2%</span>
+            </div>
+            <svg class="sparkline" viewBox="0 0 280 100" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path class="spark-area" d="M0,70 L20,65 L40,72 L60,55 L80,58 L100,40 L120,45 L140,35 L160,42 L180,28 L200,32 L220,22 L240,30 L260,18 L280,25 L280,100 L0,100 Z" fill="url(#sparkFill)"/>
+              <polyline class="spark-line" points="0,70 20,65 40,72 60,55 80,58 100,40 120,45 140,35 160,42 180,28 200,32 220,22 240,30 260,18 280,25" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="spark-note">假想曲線 · 非真實報價</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="feed-section" aria-labelledby="feed-heading">
+      <div class="section-head">
+        <h2 id="feed-heading">每日簡報</h2>
+        <div class="filters" role="tablist" aria-label="市場篩選">
+          <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">全部</button>
+          <button type="button" class="filter-btn" data-filter="us" role="tab" aria-selected="false">美股</button>
+          <button type="button" class="filter-btn" data-filter="hk" role="tab" aria-selected="false">港股</button>
+        </div>
+      </div>
+
+      <div class="post-grid" id="post-grid">
+        <!-- cards injected / static below -->
+      </div>
+    </section>
+
+    <!-- Detail panel -->
+    <section id="post-detail" class="post-detail" hidden aria-live="polite">
+      <div class="detail-inner">
+        <button type="button" class="back-btn" id="back-btn">
+          <span aria-hidden="true">←</span> 返回列表
+        </button>
+        <article class="detail-article" id="detail-content">
+          <!-- filled by JS -->
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>美港股日報</strong> — 靜態示範站。所有行情、百分比與評論均為<strong>示範數據</strong>，不構成投資建議。</p>
+      <p class="footer-meta">© 2026 · 純 HTML / CSS / JS · 僅供學習與版面展示</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
