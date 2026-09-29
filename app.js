@@ -209,7 +209,22 @@ function renderHero() {
   if (heading) heading.textContent = post.title;
   if (lead) lead.textContent = post.excerpt;
   if (tags) {
-    tags.innerHTML = marketsOf(post).map(chipFor).join("");
+    const markets = marketsOf(post);
+    let show;
+    if (currentFilter === "us" || currentFilter === "hk") {
+      show = markets.filter((m) => m === currentFilter);
+    } else if (markets.length === 2) {
+      show = ["both"];
+    } else {
+      show = markets;
+    }
+    tags.innerHTML = show
+      .map((m) =>
+        m === "both"
+          ? '<span class="chip chip-both">美港股</span>'
+          : chipFor(m)
+      )
+      .join("");
   }
 }
 
@@ -258,6 +273,7 @@ function applyFilter(filter) {
     btn.classList.toggle("is-active", active);
     btn.setAttribute("aria-selected", active ? "true" : "false");
   });
+  renderHero();
   renderCards();
   if (document.body.classList.contains("showing-detail")) {
     const openId = location.hash.match(/^#post\/(.+)$/);
