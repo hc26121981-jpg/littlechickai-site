@@ -216,6 +216,27 @@ function chipFor(m) {
   return "";
 }
 
+function asOfOf(block) {
+  if (!block) return "";
+  return (block.asOf || "").trim();
+}
+
+function timeLineFor(post, filter) {
+  const bits = [];
+  const showUs = filter !== "hk";
+  const showHk = filter !== "us";
+  if (showUs && post.us) {
+    const t = asOfOf(post.us);
+    if (t) bits.push(`美股 ${t}`);
+  }
+  if (showHk && post.hk) {
+    const t = asOfOf(post.hk);
+    if (t) bits.push(`港股 ${t}`);
+  }
+  if (!bits.length && post.timeNote) return post.timeNote;
+  return bits.join(" · ");
+}
+
 function excerptFor(post, filter) {
   if (filter === "us" && post.us && post.us.summary) {
     const s = post.us.summary.replace(/\s+/g, " ").trim();
@@ -261,7 +282,12 @@ function renderHero() {
   const lead = document.querySelector(".hero .hero-lead");
   const tags = document.querySelector(".hero .hero-tags");
 
-  if (eyebrow) eyebrow.textContent = `今日焦點 · ${post.date}`;
+  if (eyebrow) {
+    const t = timeLineFor(post, currentFilter);
+    eyebrow.textContent = t
+      ? `今日焦點 · ${post.date} · ${t}`
+      : `今日焦點 · ${post.date}`;
+  }
   if (heading) heading.textContent = post.title;
   if (lead) lead.textContent = post.excerpt;
   if (tags) {
@@ -306,12 +332,14 @@ function renderCards() {
         .map(chipFor)
         .join("");
       const excerpt = excerptFor(post, currentFilter);
+      const timeLine = timeLineFor(post, currentFilter);
       return `
       <button type="button" class="post-card" data-id="${post.id}" data-markets="${markets.join(",")}" aria-label="閱讀：${post.title}">
         <div class="post-card-meta">
           <time class="post-date" datetime="${post.date}">${post.date}</time>
           <div class="post-badges">${badges}</div>
         </div>
+        ${timeLine ? `<p class="post-time">${timeLine}</p>` : ""}
         <h3>${post.title}</h3>
         <p class="post-excerpt">${excerpt}</p>
         <span class="post-cta">閱讀全文 <span aria-hidden="true">→</span></span>
@@ -342,10 +370,10 @@ function applyFilter(filter) {
 
 function marketBlock(label, chipClass, data) {
   if (!data) return "";
-  const themes = data.themes
+  const themes = (data.themes || [])
     .map((t) => `<span class="theme-tag">${t}</span>`)
     .join("");
-  const tickers = data.tickers
+  const tickers = (data.tickers || [])
     .map(
       (t) => `
       <li>
@@ -355,10 +383,15 @@ function marketBlock(label, chipClass, data) {
       </li>`
     )
     .join("");
+  const asOf = asOfOf(data);
+  const asOfHtml = asOf
+    ? `<p class="market-asof"><time>${asOf}</time></p>`
+    : "";
 
   return `
     <section class="market-section">
       <h3><span class="chip ${chipClass}">${label}</span></h3>
+      ${asOfHtml}
       <p>${data.summary}</p>
       <div class="themes">${themes}</div>
       <ul class="ticker-list">${tickers}</ul>
@@ -383,9 +416,11 @@ function openPost(id) {
         : markets;
   const badges = badgeMarkets.map(chipFor).join(" ");
 
+  const detailTime = timeLineFor(post, currentFilter);
   detailContent.innerHTML = `
     <header class="detail-header">
       <time class="post-date" datetime="${post.date}">${post.dateLabel}</time>
+      ${detailTime ? `<p class="post-time detail-time">${detailTime}</p>` : ""}
       <h2>${post.title}</h2>
       <div class="post-badges">${badges}</div>
       <p class="detail-disclaimer">⚠️ 內容來自美股／港股助手簡報彙整，分析≠投資建議。</p>
