@@ -2,6 +2,73 @@
   "_comment": "Entries may be real briefings from 美股助手/港股助手. Optional post.source: \"demo\" (sample) or \"assistants\" (live).",
   "posts": [
     {
+      "id": "2026-10-01",
+      "date": "2026-10-01",
+      "dateLabel": "2026年10月1日 星期四（港股國慶休市）",
+      "title": "美股開盤前 Alphabet 偏強、MU 業績後回軟；港股國慶休市",
+      "excerpt": "美股 21:02（港時）開盤／初盤：SPY／QQQ 盤前微升；GOOGL／GOOG 盤前約 +1.7%～+1.9%，NVDA +0.8%；MU 盤前 −1.1%（業績後回軟）。今日港股因國慶休市，暫無港股段。",
+      "markets": [
+        "us"
+      ],
+      "source": "assistants",
+      "us": {
+        "asOf": "2026-10-01 21:02（港時）· 21:02 開盤／初盤（正規盤未開；成交用 9/30）",
+        "summary": "【美股助手｜2026-10-01 21:02（港時）｜21:02 開盤／初盤】大市：SPY 盤前 ~765.23（+0.36%）；QQQ ~743.74（+0.54%）；ES ~7735（+0.25%）；VIX ~16.44。正規盤未開，成交用 9/30。專責（9/30 量 vs 均量｜MarketBeat 成交額｜盤前%）：MU 1065.11｜盤前 1053.60（−1.08%）｜28.57M vs 34.15M｜$32.15B｜業績後回軟；FQ1 指引強；ITC 噪音；NVDA 228.38｜230.20（+0.80%）｜118.68M vs 123.11M｜$27.35B；TSLA 354.81｜356.74（+0.54%）｜38.51M vs 38.56M｜$13.69B｜Q3 交付 10/2；TSM 456.19｜457.45（+0.26%）｜8.93M vs 11.69M｜$4.09B；GOOGL 344.08｜350.00（+1.72%）｜36.64M vs 27.06M｜$12.66B｜Gemini 4 Argon；GOOG 340.74｜347.25（+1.91%）｜23.58M vs 18.04M｜$8.07B；SPCX 150.86｜151.13（+0.18%）｜79.15M vs 92.24M｜$11.96B｜Starship／Google TPU 軌道發射新聞。成交額二十大（9/30）：MU、NVDA、QQQ、AAPL、META、MSFT、TSLA、GOOGL、SPCX、INTC、SNDK、AMZN、AMD、GOOG、AVGO、TLT、BE、TSM、MRNA、LLY。判斷：盤前資金偏建設性；相對強弱 GOOGL／NVDA > MU；解讀≠投資建議。來源：Yahoo Finance；MarketBeat most active；Micron IR；CNBC；Google blog；SpaceX；TeslaNorth。",
+        "themes": [
+          "開盤／初盤",
+          "盤前偏建設性",
+          "Alphabet 盤前偏強",
+          "MU 業績後回軟",
+          "港股國慶休市"
+        ],
+        "tickers": [
+          {
+            "sym": "GOOG",
+            "note": "盤前 +1.91%（347.25）；9/30 額 $8.07B",
+            "chg": "+1.91%",
+            "up": true
+          },
+          {
+            "sym": "GOOGL",
+            "note": "盤前 +1.72%（350.00）；Gemini 4 Argon；9/30 額 $12.66B",
+            "chg": "+1.72%",
+            "up": true
+          },
+          {
+            "sym": "NVDA",
+            "note": "盤前 +0.80%（230.20）；9/30 額 $27.35B",
+            "chg": "+0.80%",
+            "up": true
+          },
+          {
+            "sym": "TSLA",
+            "note": "盤前 +0.54%（356.74）；Q3 交付 10/2；9/30 額 $13.69B",
+            "chg": "+0.54%",
+            "up": true
+          },
+          {
+            "sym": "TSM",
+            "note": "盤前 +0.26%（457.45）；9/30 額 $4.09B",
+            "chg": "+0.26%",
+            "up": true
+          },
+          {
+            "sym": "SPCX",
+            "note": "盤前 +0.18%（151.13）；Starship／Google TPU 軌道發射新聞",
+            "chg": "+0.18%",
+            "up": true
+          },
+          {
+            "sym": "MU",
+            "note": "盤前 −1.08%（1053.60）；業績後回軟；FQ1 指引強；ITC 噪音；9/30 額榜第 1 $32.15B",
+            "chg": "-1.08%",
+            "up": false
+          }
+        ]
+      },
+      "timeNote": "美股 asOf：2026-10-01 21:02（港時）開盤／初盤；港股：國慶休市（HKEX）"
+    },
+    {
       "id": "2026-09-30",
       "date": "2026-09-30",
       "dateLabel": "2026年9月30日 星期三",
