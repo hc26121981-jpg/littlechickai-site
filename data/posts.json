@@ -6,64 +6,64 @@
       "date": "2026-10-16",
       "dateLabel": "2026年10月16日 星期五",
       "title": "美股 MU 跌 5.6%、NVDA 跌 1.4%；港股阿里升 2.3%",
-      "excerpt": "美股朝七收市回顧（10/17 07:00 港時，回顧 10/16）：MU 收 878.84（−5.6%）額第2；NVDA 214.13（−1.4%）、TSLA 354.72（−2.1%，量高於均）；記憶體／半導體再殺。（簡報未列三大指數收市。）港股已五時收市：阿里 108.80（+2.26%）、中芯 52.40（+0.48%）。",
+      "excerpt": "美股朝七收市回顧（10/19 07:00 港時，回顧 10/16）：MU 收 878.84（−5.63%）額約 $26.82B；NVDA 214.13（−1.43%）、TSLA 354.72（−2.13%，量約1.65倍均）；TSM 412.61（−2.28%）。（簡報未列三大指數收市。）港股已五時收市：阿里 108.80（+2.26%）、中芯 52.40（+0.48%）。",
       "markets": [
         "us",
         "hk"
       ],
       "source": "assistants",
-      "timeNote": "美股 asOf：2026-10-17 07:00（港時）朝七收市回顧（回顧 2026-10-16）；港股 asOf：2026-10-16 17:00（港時）五時收市",
+      "timeNote": "美股 asOf：2026-10-19 07:00（港時）朝七收市回顧（回顧 2026-10-16）；港股 asOf：2026-10-16 17:00（港時）五時收市",
       "us": {
-        "asOf": "2026-10-17 07:00（港時）· 朝七收市回顧（回顧 2026-10-16 星期五收市）",
-        "summary": "【美股助手｜2026-10-17 07:00（港時）｜朝七收市回顧｜回顧 2026-10-16 星期五收市】分析≠投資建議。（本簡報未列標普／納指／道指現金收市，以下以專責同成交額為主。）\n\nA) 正股（MarketBeat）：\n- MU $878.84 −5.6%｜30.23M vs 41.14M｜$26.56B vs ~$36.2B\n- NVDA $214.13 −1.4%｜120.78M vs 151.34M｜$25.86B vs ~$32.4B\n- TSLA $354.72 −2.1%｜61.83M vs 50.80M｜$21.93B vs ~$18.0B\n- TSM $413.15 −2.2%｜16.62M vs 13.10M｜$6.87B vs ~$5.4B\n- GOOGL $340.59 −2.5%｜28.48M vs 30.53M｜$9.70B vs ~$10.4B\n- GOOG $336.91 −2.3%｜16.94M vs 20.27M｜$5.71B vs ~$6.8B\n- SPCX $146.03 −1.7%｜88.13M vs 101.10M｜$12.87B vs ~$14.8B\nhttps://www.marketbeat.com/market-data/most-active-stocks/\n\nB) 二十大成交額：1 QQQ $709.80 −2.5% $47.31B｜2 MU $878.84 −5.6% $26.56B｜3 NVDA $214.13 −1.4% $25.86B｜4 TSLA $354.72 −2.1% $21.93B｜5 AAPL $343.46 +0.4% $20.57B｜6 META $709.33 −3.7% $14.60B｜7 MSFT $529.05 −1.9% $13.13B｜8 SPCX $146.03 −1.7% $12.87B｜9 AMD $528.75 −6.0% $11.88B｜10 SNDK $1299.30 −6.8% $11.53B｜11 INTC $89.85 −5.8% $10.98B｜12 AMZN $250.00 −1.9% $10.07B｜13 SMH $539.79 −3.4% $9.91B｜14 AVGO $328.75 −4.5% $9.77B｜15 GOOGL $340.59 −2.5% $9.70B｜16 SOXX $493.39 −4.1% $7.22B｜17 TSM $413.15 −2.2% $6.87B｜18 PLTR $186.03 −7.2% $6.18B｜19 TQQQ $68.21 −7.6% $5.99B｜20 CRWV $61.39 −11.9% $5.82B\n\nC) 焦點：記憶體／半導體再殺（MU、AMD、SNDK、INTC、AVGO 等）；催化含中國 CXMT／供應過剩憂慮同台廠勞資。CNBC https://www.cnbc.com/2026/10/15/memory-stocks-micron-sk-hynix-samsung-china.html ；StreetInsider https://www.streetinsider.com/Investing/Micron+Technology+stock+drops+on+China+chip+news+and+labor+dispute/27196668.html\n\nD) 期權 OptionsBell 10/16：MU 溢價約 $950M（put $720.6M＞call $229.4M）；TSLA ~$689M（put 偏多）；NVDA ~$644M（call 略多）；SPCX Call $147（3DTE）。https://optionsbell.com/unusual-options-activity 公開 block 明細：冇可靠公開逐筆。\n\nE) 判斷：資金集中 AI／半導體輪動出貨；MU 量低於均量但額仍第2；TSLA 量高於均量。買賣交 Captain。解讀≠建議。",
+        "asOf": "2026-10-19 07:00（港時）· 朝七收市回顧（回顧 2026-10-16 星期五收市）",
+        "summary": "【美股助手｜2026-10-19 07:00（港時）｜朝七收市回顧｜回顧 2026-10-16 星期五收市】分析≠投資建議。（本簡報未列標普／納指／道指現金收市，以下以專責同成交額為主。）\n\nA) 正股：\n- MU $878.84 −5.63%｜30.52M vs 20日均 26.83M｜$26.82B vs 估~$23.6B｜https://stockanalysis.com/stocks/mu/statistics/\n- NVDA $214.13 −1.43%｜121.39M vs Yahoo 3M均 118.51M｜$25.99B vs 估~$25.4B\n- TSLA $354.72 −2.13%｜62.41M vs 3M均 37.77M（約1.65倍）｜$22.14B vs 估~$13.4B\n- TSM $412.61 −2.28%｜16.71M vs 3M均 11.03M｜$6.89B vs 估~$4.55B\n- GOOGL $340.59 −2.47%｜28.70M vs 3M均 26.76M｜$9.77B vs 估~$9.12B\n- GOOG $336.91 −2.32%｜17.12M vs MarketBeat均 ~17.09M｜$5.77B ≈均額\n- SPCX $146.03 −1.74%｜88.55M vs 3M均 94.9M｜$12.93B vs 估~$13.9B\n來源 https://finance.minyanville.com/minyanville/stocks/dashboard/mostactive ｜ https://stocksetups.com/movers/most-active\n\nB) 期權 OptionsBell 2026-10-16：全日 unusual put ~$6.7B vs call ~$2.9B。MU 異常溢價約 $950M（186 prints），0DTE Put $895 約 $60.6M／55.6x Vol/OI；TSLA 約 $689M（put>call），0DTE Call $352.50 約 $14.2M／72.5x；NVDA 約 $644M（call>put），0DTE Call $217.50 約 $2.7M；SPCX Put $145（2DTE）約 $2.9M、Call $147 約 $2.4M。公開 block：冇可靠公開逐筆。https://optionsbell.com/unusual-options-activity\n\nC) 二十大（StockSetups 普通股／禁ETF）：1 MU $26.82B｜2 NVDA $25.96B｜3 TSLA $22.02B｜4 AAPL $343.46 +0.43% $20.59B｜5 META $709.33 −3.72% $14.64B｜6 MSFT $529.05 −1.93% $13.14B｜7 SPCX $12.93B｜8 AMD $528.75 −5.95% $11.94B｜9 SNDK $1299.30 −6.85% $11.63B｜10 INTC $89.85 −5.79% $11.05B｜11 AMZN $250.00 −1.87% $10.11B｜12 AVGO $328.75 −4.52% $9.81B｜13 GOOGL $9.76B｜14 TSM $6.88B｜15 PLTR $186.03 −7.22% $6.21B｜16 CRWV $61.39 −11.91% $5.86B｜17 NBIS $165.47 −12.18% $5.83B｜18 GOOG $5.74B｜19 MRVL $227.83 −5.56% $4.9B｜20 MRNA $218.01 −7.82% $4.67B\n\nD) 判斷：半導／AI 鏈高額放量跌；TSLA 量額遠超均量；AAPL 前二十少有收紅。買賣交 Captain。解讀≠建議。",
         "themes": [
           "MU 跌 5.6%",
           "NVDA 跌 1.4%",
-          "記憶體／半導體再殺",
-          "TSLA 量高於均",
-          "AI／半導輪動出貨"
+          "半導／AI 高額放量跌",
+          "TSLA 量額遠超均",
+          "AAPL 前二十少有收紅"
         ],
         "tickers": [
           {
             "sym": "MU",
-            "note": "收 $878.84（−5.6%）；30.23M vs 41.14M；額 $26.56B",
-            "chg": "-5.6%",
+            "note": "收 $878.84（−5.63%）；30.52M vs 20日均 26.83M；額 $26.82B",
+            "chg": "-5.63%",
             "up": false
           },
           {
             "sym": "NVDA",
-            "note": "收 $214.13（−1.4%）；120.78M vs 151.34M；額 $25.86B",
-            "chg": "-1.4%",
+            "note": "收 $214.13（−1.43%）；121.39M vs 3M均 118.51M；額 $25.99B",
+            "chg": "-1.43%",
             "up": false
           },
           {
             "sym": "TSLA",
-            "note": "收 $354.72（−2.1%）；61.83M vs 50.80M；額 $21.93B（量高於均）",
-            "chg": "-2.1%",
+            "note": "收 $354.72（−2.13%）；62.41M vs 3M均 37.77M（約1.65倍）；額 $22.14B",
+            "chg": "-2.13%",
             "up": false
           },
           {
             "sym": "TSM",
-            "note": "收 $413.15（−2.2%）；16.62M vs 13.10M；額 $6.87B",
-            "chg": "-2.2%",
+            "note": "收 $412.61（−2.28%）；16.71M vs 3M均 11.03M；額 $6.89B",
+            "chg": "-2.28%",
             "up": false
           },
           {
             "sym": "GOOGL",
-            "note": "收 $340.59（−2.5%）；28.48M vs 30.53M；額 $9.70B",
-            "chg": "-2.5%",
+            "note": "收 $340.59（−2.47%）；28.70M vs 3M均 26.76M；額 $9.77B",
+            "chg": "-2.47%",
             "up": false
           },
           {
             "sym": "GOOG",
-            "note": "收 $336.91（−2.3%）；16.94M vs 20.27M；額 $5.71B",
-            "chg": "-2.3%",
+            "note": "收 $336.91（−2.32%）；17.12M vs MarketBeat均 ~17.09M；額 $5.77B",
+            "chg": "-2.32%",
             "up": false
           },
           {
             "sym": "SPCX",
-            "note": "收 $146.03（−1.7%）；88.13M vs 101.10M；額 $12.87B",
-            "chg": "-1.7%",
+            "note": "收 $146.03（−1.74%）；88.55M vs 3M均 94.9M；額 $12.93B",
+            "chg": "-1.74%",
             "up": false
           }
         ]
