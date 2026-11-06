@@ -53,16 +53,16 @@
       "date": "2026-11-05",
       "dateLabel": "2026年11月5日 星期四",
       "title": "美股收市 MU 跌約 17%、納指跌約 5.5%；港股恒指升 3.67%",
-      "excerpt": "美股朝七收市回顧（11/06 07:00 港時／美東 11/05）：標普 −4.36%≈7354、納指 −5.52%≈24315、道指 −3.44%≈51523、費半 SOX≈−12%；MU 656.39（−17.46%）、NVDA 181.60（−9.26%）、TSLA 343.69（−10.77%）、TSM 353.10（−10.78%）、SPCX 123.62（−9.05%）；GOOGL 282.57（−2.20%）、GOOG 281.74（−1.94%）相對抗跌但仍放量。芯片鏈恐慌性放量；put premium 遠高於 call。港股五時收市：恒指 24796.98（+3.67%）、科指 4154.29（+5.55%）；阿里 109.10（+8.45%）、中芯 47.50（+2.28%）、中移動 81.30（+0.99%）。",
+      "excerpt": "美股朝七收市回顧＋聰明錢（11/06 07:00／07:05 港時；回顧 11/05）：標普 −4.36%≈7354、納指 −5.52%≈24315、道指 −3.44%≈51523、費半 SOX≈−12%；MU 656.39（−17.46%）、NVDA 181.60（−9.26%）、TSLA 343.69（−10.77%）、TSM 353.10（−10.78%）、SPCX 123.62（−9.05%）；GOOGL 282.57（−2.20%）、GOOG 281.74（−1.94%）相對抗跌但仍放量。芯片鏈恐慌性放量；put premium 遠高於 call。聰明錢：Form4冇真訊號；國會後備 GOOGL 較大額賣出披露；13F只可當早報情景（季中未齊）。港股五時收市：恒指 24796.98（+3.67%）、科指 4154.29（+5.55%）；阿里 109.10（+8.45%）、中芯 47.50（+2.28%）、中移動 81.30（+0.99%）。",
       "markets": [
         "us",
         "hk"
       ],
       "source": "assistants",
-      "timeNote": "美股 asOf：2026-11-06 07:00（港時）朝七收市回顧；港股 asOf：2026-11-05 17:00（港時）五時收市",
+      "timeNote": "美股 asOf：2026-11-06 07:00／07:05（港時）朝七收市回顧／聰明錢追蹤（回顧 2026-11-05）；港股 asOf：2026-11-05 17:00（港時）五時收市",
       "us": {
-        "asOf": "2026-11-06 07:00（港時）· 朝七收市回顧",
-        "summary": "【美股助手｜2026-11-06 07:00（港時）｜朝七收市回顧】回顧交易日：2026-11-05（美東四）美股收市。數字同交用戶版一致。來源：[Motley Fool](https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nvidia-slides-on-ai-chip-selloff-as-election-uncertainty-weighs/)、[TradingKey](https://www.tradingkey.com/analysis/stocks/us-stocks/262284414-us-stocks-close-nasdaq-sp500-dow-enters-correction-ai-selloff-tradingkey)、[MarketBeat 成交額榜](https://www.marketbeat.com/market-data/most-active-stocks/)、[Yahoo Finance](https://finance.yahoo.com/)、[OptionsBell](https://optionsbell.com/unusual-options-activity)。分析≠投資建議。\n\n大盤：標普 −4.36%≈7354；納指 −5.52%≈24315；道指 −3.44%≈51523；費半 SOX≈−12%。主題：AI／半導體／數據中心政策憂慮＋選舉後不確定性，資金從芯片鏈撤離。\n\nA) 正股量／額（Yahoo 收市價量；額＝價×量估算；平均量＝Yahoo Avg Volume）\n- MU $656.39（−17.46%）｜量 76.14M vs 均 26.96M｜額≈$50.0B vs 均額估算≈$17.7B\n- NVDA $181.60（−9.26%）｜量 301.62M vs 均 113.17M｜額≈$54.8B vs ≈$20.5B\n- TSLA $343.69（−10.77%）｜量 78.37M vs 均 36.96M｜額≈$26.9B vs ≈$12.7B\n- TSM $353.10（−10.78%）｜量 42.65M vs 均 10.50M｜額≈$15.1B vs ≈$3.7B\n- GOOGL $282.57（−2.20%）｜量 52.72M vs 均 28.27M｜額≈$14.9B vs ≈$8.0B\n- GOOG $281.74（−1.94%）｜量 40.36M vs 均 18.66M｜額≈$11.4B vs ≈$5.3B\n- SPCX $123.62（−9.05%）｜量 168.45M vs 均≈101.27M｜額≈$20.8B vs ≈$12.5B\n\nB) 成交額二十大（MarketBeat Dollar Volume；股票為主，ETFs 另註；日期標記 2026-11-05）\n整體榜首 QQQ 額≈$83.0B（ETF，不入股票二十大）。股票額居前：NVDA $54.94B（−9.3%）、MU $50.10B（−17.5%）、AMD $28.44B（−17.3%）、TSLA $27.14B（−10.8%）、AAPL $25.95B（−1.5%）、SNDK $24.22B（−22.3%）、MSFT／AMZN、SPCX $20.89B（−9.0%）；其後 META、AVGO、TSM、GOOGL、INTC、GOOG 等。\n\nC) 期權（OptionsBell 2026-11-05；只作資訊）\n全日 put premium≈$13.3B 遠高於 call≈$3.6B。MU 總權利金≈$2.43B（put≈$2.2B／call≈$0.21B）居前；NVDA≈$1.36B；TSLA≈$1.15B。公開獨立 block 明細：冇可靠來源列出。\n\nD) 判斷\n芯片鏈恐慌性放量出貨；Alphabet 相對抗跌但仍放量。解讀≠投資建議；真正買賣交 captain。",
+        "asOf": "2026-11-06 07:00／07:05（港時）· 朝七收市回顧／聰明錢追蹤",
+        "summary": "【美股助手｜2026-11-06 07:00（港時）｜朝七收市回顧】回顧交易日：2026-11-05（美東四）美股收市。數字同交用戶版一致。來源：[Motley Fool](https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nvidia-slides-on-ai-chip-selloff-as-election-uncertainty-weighs/)、[TradingKey](https://www.tradingkey.com/analysis/stocks/us-stocks/262284414-us-stocks-close-nasdaq-sp500-dow-enters-correction-ai-selloff-tradingkey)、[MarketBeat 成交額榜](https://www.marketbeat.com/market-data/most-active-stocks/)、[Yahoo Finance](https://finance.yahoo.com/)、[OptionsBell](https://optionsbell.com/unusual-options-activity)。分析≠投資建議。\n\n大盤：標普 −4.36%≈7354；納指 −5.52%≈24315；道指 −3.44%≈51523；費半 SOX≈−12%。主題：AI／半導體／數據中心政策憂慮＋選舉後不確定性，資金從芯片鏈撤離。\n\nA) 正股量／額（Yahoo 收市價量；額＝價×量估算；平均量＝Yahoo Avg Volume）\n- MU $656.39（−17.46%）｜量 76.14M vs 均 26.96M｜額≈$50.0B vs 均額估算≈$17.7B\n- NVDA $181.60（−9.26%）｜量 301.62M vs 均 113.17M｜額≈$54.8B vs ≈$20.5B\n- TSLA $343.69（−10.77%）｜量 78.37M vs 均 36.96M｜額≈$26.9B vs ≈$12.7B\n- TSM $353.10（−10.78%）｜量 42.65M vs 均 10.50M｜額≈$15.1B vs ≈$3.7B\n- GOOGL $282.57（−2.20%）｜量 52.72M vs 均 28.27M｜額≈$14.9B vs ≈$8.0B\n- GOOG $281.74（−1.94%）｜量 40.36M vs 均 18.66M｜額≈$11.4B vs ≈$5.3B\n- SPCX $123.62（−9.05%）｜量 168.45M vs 均≈101.27M｜額≈$20.8B vs ≈$12.5B\n\nB) 成交額二十大（MarketBeat Dollar Volume；股票為主，ETFs 另註；日期標記 2026-11-05）\n整體榜首 QQQ 額≈$83.0B（ETF，不入股票二十大）。股票額居前：NVDA $54.94B（−9.3%）、MU $50.10B（−17.5%）、AMD $28.44B（−17.3%）、TSLA $27.14B（−10.8%）、AAPL $25.95B（−1.5%）、SNDK $24.22B（−22.3%）、MSFT／AMZN、SPCX $20.89B（−9.0%）；其後 META、AVGO、TSM、GOOGL、INTC、GOOG 等。\n\nC) 期權（OptionsBell 2026-11-05；只作資訊）\n全日 put premium≈$13.3B 遠高於 call≈$3.6B。MU 總權利金≈$2.43B（put≈$2.2B／call≈$0.21B）居前；NVDA≈$1.36B；TSLA≈$1.15B。公開獨立 block 明細：冇可靠來源列出。\n\nD) 判斷\n芯片鏈恐慌性放量出貨；Alphabet 相對抗跌但仍放量。解讀≠投資建議；真正買賣交 captain。\n\n【聰明錢申報追蹤｜2026-11-06 07:05（港時）｜覆蓋 MU／NVDA／TSLA／TSM／GOOGL／GOOG／SPCX】\n1) Form 4：過濾後近一週冇公開市場大買（P）、亦冇≥約$1,000萬且冇10b5-1賣出。TSM Yuan Lipen ESPP（F2）已濾；GOOGL Frances Arnold 細額10b5-1賣出已濾。OpenInsider 當日空白／500，改用 EDGAR XML。\n2) 13D／13G：TSLA BlackRock 13G/A filing 2026-10-27，196,348,742股／4.96%，event 2026-09-30。MU／NVDA／GOOGL／GOOG／SPCX filing≥10/30 暫未見新檔。\n3) 國會：CapitolTrades 403／429封鎖；後備 stockacttrades。GOOGL：Sessions Sale Oct 2 $100k–250k；Rulli Sale Oct 16 $50k–100k。另有 McGuire／Salazar／Fields 等混雜買賣（滯後披露）。\n4) 13F Q3 vs Q2：compare JSON 404，改用 data/cusip。Q3 filings遠低於Q2＝未齊檔，總量暴跌唔當清倉。Dimensional 對多數標的早報偏增；SPCX 見 Alphabet Inc. 94.18M→83.73M（−11.1%）。Vanguard／BlackRock／State Street 等巨型 Q3未見＝PENDING。\n5) 短評：Form4冇真訊號；國會後備 GOOGL 較大額賣出披露；13F只可當早報情景。解讀≠投資建議。\n",
         "themes": [
           "標普 −4.36%≈7354；納指 −5.52%≈24315；道指 −3.44%≈51523；費半 SOX≈−12%",
           "主題：AI／半導體／數據中心政策憂慮＋選舉後不確定性",
@@ -71,7 +71,11 @@
           "GOOGL 282.57（−2.20%）、GOOG 281.74（−1.94%）相對抗跌但仍放量",
           "成交額前列：NVDA、MU、AMD、TSLA、SPCX；SNDK −22.3%",
           "期權：put premium 遠高於 call；MU／NVDA／TSLA 權利金居前",
-          "判斷：芯片鏈恐慌性放量出貨；Alphabet 相對抗跌但仍放量（解讀≠下單）"
+          "判斷：芯片鏈恐慌性放量出貨；Alphabet 相對抗跌但仍放量（解讀≠下單）",
+          "聰明錢：Form 4 冇真訊號（近一週冇公開大買／大額非10b5-1賣；TSM ESPP／GOOGL 細額10b5-1已濾）",
+          "聰明錢：13D／13G — TSLA BlackRock 13G/A 4.96%（filing 10/27）；其餘專責≥10/30暫未見新檔",
+          "聰明錢：國會後備 — GOOGL Sessions／Rulli 較大額賣出披露（滯後）；CapitolTrades 封鎖",
+          "聰明錢：13F 季中未齊檔；Dimensional 早報偏增；SPCX Alphabet 94.18M→83.73M（−11.1%）；巨型PENDING"
         ],
         "tickers": [
           {
