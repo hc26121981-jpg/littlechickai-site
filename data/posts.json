@@ -5,13 +5,74 @@
       "id": "2026-11-10",
       "date": "2026-11-10",
       "dateLabel": "2026年11月10日 星期二",
-      "title": "港股恒指升 0.44%、科指升約 1.1%；美股段待補",
-      "excerpt": "港股五時收市（11/10 17:00 港時）：恒指 24557.04（+0.44%）、科指 4084.45（+1.08%）；成交約 1781.75 億，南向淨賣約 27.38 億。阿里 101.60（−2.87%）、中芯 47.24（+2.61%）、中移動 81.05（−0.25%）、小米 30.60（+1.66%）。美股段待補。",
+      "title": "美股盤前道指偏強、納指偏弱，NVDA 跌約 0.8%；港股恒指升 0.44%",
+      "excerpt": "美股開盤前（11/10 21:02 港時；抓取美東 08:07–08:09，本稿寫於美東 08:30 嘅 10 月 CPI 公布前）：盤前 ETF DIA $525.50（+0.41%）、SPY $753.15（+0.06%）、QQQ $676.35（−0.44%）；較早 Reuters 期貨道指約 +0.32%、標普約 +0.02%、納指約 −0.34%。NVDA 177.30（−0.77% 額約 $16.47 億）、MU 720.82（−1.68% 額約 $5.20 億）、SPCX 138.70（−2.37%）、TSLA 372.97（−1.34%）；未見齊全盤前二十大成交額榜故不重貼。港股五時收市：恒指 24557.04（+0.44%）、科指 4084.45（+1.08%）；阿里 101.60（−2.87%）、中芯 47.24（+2.61%）、中移動 81.05（−0.25%）、小米 30.60（+1.66%）。",
       "markets": [
+        "us",
         "hk"
       ],
       "source": "assistants",
-      "timeNote": "港股 asOf：2026-11-10 17:00（港時）五時收市；美股段待補",
+      "timeNote": "美股 asOf：2026-11-10 21:02（港時）開盤前；港股 asOf：2026-11-10 17:00（港時）五時收市",
+      "us": {
+        "asOf": "2026-11-10 21:02（港時）· 開盤前",
+        "summary": "【美股助手｜2026-11-10 21:02（港時）｜開盤前】分析≠投資建議。數字同用戶版一致。抓取時刻：美東 08:07–08:09（港時約 21:07–21:09），現金盤未開。本稿寫於美東 08:30 嘅 10 月 CPI 公布前。來源：[Nasdaq ETF](https://www.nasdaq.com/market-activity/etf/spy)、[Investing.com 轉載 Reuters 期貨](https://www.investing.com/news/stock-market-news/sp-500-dow-futures-climb-as-oil-slide-lifts-sentiment-5014579)、[CNBC 國債](https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html)、[Yahoo 油價／期貨](https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html)、[BLS CPI 日程](https://www.bls.gov/schedule/news_release/cpi.htm)、[Nasdaq 正股](https://www.nasdaq.com/market-activity/stocks/nvda)、[Investing.com 盤前最活躍](https://www.investing.com/equities/pre-market)、[NVIDIA 董事會聲明](https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors)、[CNBC Huang 調查](https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-investigation.html)、[Fortune FBI](https://fortune.com/2026/11/10/fbi-looking-into-jensen-huang-nvidia-corporate-governance/)、[OptionsBell](https://optionsbell.com/unusual-options-activity)、[EconoTimes TSLA](https://www.econotimes.com/Tesla-Says-Cybertruck-Orders-Outpace-Output-Before-Texas-Line-Winds-Down-1774438)、[FinanceFeeds TPU](https://financefeeds.com/alphabet-googl-stock-293-monday-after-new-tpu-systems-target-nvidia-bull-325-bear-277/)、[Yahoo SPCX](https://finance.yahoo.com/markets/stocks/articles/spcx-stock-climbs-overnight-tesla-081607440.html)、[StockAnalysis NVDA](https://stockanalysis.com/stocks/nvda/)。今日冇現金指數收市——只有盤前 ETF／期貨。\n\n【宏觀／盤前 ETF 同期貨】來源 [Nasdaq](https://www.nasdaq.com/market-activity/etf/spy)，美東 08:08–08:09：[DIA](https://www.nasdaq.com/market-activity/etf/dia) $525.50（+0.41%），[SPY](https://www.nasdaq.com/market-activity/etf/spy) $753.15（+0.06%），[QQQ](https://www.nasdaq.com/market-activity/etf/qqq) $676.35（−0.44%）。較早 Reuters 美東 07:21：道指期貨約 +0.32%、標普期貨約 +0.02%、納指期貨約 −0.34%（[Investing.com 轉載](https://www.investing.com/news/stock-market-news/sp-500-dow-futures-climb-as-oil-slide-lifts-sentiment-5014579)）。國債：[CNBC](https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html) 報 2 年期升逾 7 個基點至 4.62%，10 年期升逾 3 個基點至 4.894%，30 年期約 5.27%。聯儲理事 Waller 傾向 12 月加息，若通脹高過預期甚至應考慮加 50 個基點。油價：Yahoo 美東 04:30 錄得布倫特 $90.58（−2.15%）、WTI $85.24（−1.85%）（[Yahoo](https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html)），其後 Reuters／CNBC 指布倫特跌穿 $90，為 8 月以來首次，背景是特朗普淡化對伊朗進一步軍事行動。\n\n【今日／本週】美東 08:30 公布 10 月 CPI（預期總指數按月 +0.3%、核心 +0.2%；因 2025 年 10 月政府停擺缺基數，[BLS](https://www.bls.gov/schedule/news_release/cpi.htm) 今次將不公布按年百分比）。收市後有 CoreWeave（CRWV）業績；週四有應用材料、思科；週五有 PPI；NVDA 業績 11 月 17 日（[StockAnalysis](https://stockanalysis.com/stocks/nvda/)）。\n\n【盤前正股｜Nasdaq 公開報價，美東 08:07–08:08；額＝盤前價×盤前量】來源：[Nasdaq](https://www.nasdaq.com/market-activity/stocks/nvda)。[Investing.com 盤前最活躍榜](https://www.investing.com/equities/pre-market) 美東 08:06 方向一致。\n- MU $720.82（−1.68%，−$12.33），量 72.20 萬股，額約 $5.20 億（上收 $733.15）。星期一升 6.25% 後盤前回吐約 1.7%，額仍逾 $5 億，屬名單第二活躍。中期／長期（解讀）：AI／HBM 需求框架仍在，但選後對數據中心擴張同政策不確定性令波動加大。\n- NVDA $177.30（−0.77%，−$1.37），量 929.03 萬股，額約 $16.47 億（上收 $178.67）。星期一逆市跌 4.27%，盤前再軟約 0.8%，但額約 $16.47 億遠遠拋離其他專責股。董事會 11 月 8 日啟動獨立調查，指目前「無理由相信」國家安全或公司機密已外洩，黃仁勳承諾配合（[NVIDIA 聲明](https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors)）。其後有報道指特朗普稱 FBI 正在查，並有股東訴訟（[CNBC](https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-investigation.html)、[Fortune](https://fortune.com/2026/11/10/fbi-looking-into-jensen-huang-nvidia-corporate-governance/)）。Reuters 引述 The Information，指相關關係據報便利至少 $75 億芯片經中資公司出貨，中方否認間諜指控。[OptionsBell 11/10](https://optionsbell.com/unusual-options-activity) 見大量短期 call，例如 $177.50（1 日到期）Vol/OI 約 857.8 倍、溢價約 $3,470 萬，另有 $175 call 溢價約 $4,260 萬；係公開異動，唔等於方向信號，亦未必全部發生喺今早盤前。中期／長期（解讀）：11 月 17 日業績同治理調查係未來兩週主催化。\n- TSLA $372.97（−1.34%，−$5.08），量 44.24 萬股，額約 $1.65 億（上收 $378.05）。星期一升 5.54% 後盤前回吐約 1.3%。馬斯克 11 月 6 日稱約 2027 年中縮減德州 Cybertruck 產線，為 Cybercab 騰位；11 月 9 日稱訂單快過產能，部分訂金將退回（[EconoTimes](https://www.econotimes.com/Tesla-Says-Cybertruck-Orders-Outpace-Output-Before-Texas-Line-Winds-Down-1774438)）。期權見 $377.50／$380 附近短 put，同時有 $377.50 call（OptionsBell）。中期／長期（解讀）：Robotaxi／Cybercab 仍係長線框架，產品轉換同政治聯動會維持高波動。\n- TSM $389.10（+0.12%，+$0.48），量 32.71 萬股，額約 $1.27 億（上收 $388.73）。專責半導體相對最強。未搜到今日必須單獨定價嘅新公司公告。中期／長期（解讀）：仍係先進製程同 AI 代工瓶頸，但客戶集中英偉達，治理風波同 Google TPU 競爭要跟住睇。\n- GOOGL $289.71（+0.54%，+$1.56），量 39.88 萬股，額約 $1.16 億（上收 $288.15）；GOOG $287.63（+0.56%，+$1.62），量 29.58 萬股，額約 $8,509 萬（上收 $286.01）。盤前同步約升 0.5%，屬名單少數偏強權重股。背景包括 Google 公布 TPU 8tx 同 TPU 8i Max（[FinanceFeeds](https://financefeeds.com/alphabet-googl-stock-293-monday-after-new-tpu-systems-target-nvidia-bull-325-bear-277/)），另有 Google 高管 Donald Harrison 辭任 SpaceX 董事。期權見 $292.50、$290 短 put（OptionsBell）。中期／長期（解讀）：雲同自研芯片有利相對強弱，但估值同搜尋／監管問題仍在。\n- SPCX $138.70（−2.37%，−$3.37），量 205.41 萬股，額約 $2.85 億（上收 $142.07）。星期一升 5.81% 後盤前跌約 2.37%，跌幅最大，但額約 $2.85 億排第三。Barclays 指若馬斯克要做大型電信收購，T-Mobile 或較合適（[Yahoo](https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html)）；德州候任州長要求暫緩 Boca Chica 附近公有土地交易，Stifel 維持買入、目標價 $190（[Yahoo](https://finance.yahoo.com/markets/stocks/articles/spcx-stock-climbs-overnight-tesla-081607440.html)）。另有 Starship Flight 15 目標 11 月 13 日嘅公開報道。期權見 $142 附近短 put 同 $141 附近 call（OptionsBell）。中期／長期（解讀）：衛星通訊、5G 同太空運算係長線空間，政治同估值波動會主導短中期。\n\n已核對名單按盤前額：NVDA 約 $16.47 億、MU 約 $5.20 億、AMD 約 $3.62 億、SPCX 約 $2.85 億、TSLA 約 $1.65 億，其後 TSM、英特爾、GOOGL、蘋果。未見齊全可核對嘅盤前二十大成交額官方榜，故不重貼上交易日二十大。\n\n【助手判斷｜解讀≠投資建議；買賣交 captain】開盤前係「道指偏強、納指偏弱」：油價回落撐周期股，英偉達治理消息壓住成長股。相對強弱：GOOGL／GOOG、TSM 較穩；MU、TSLA 回吐星期一反彈；SPCX 領先回調；NVDA 跌幅唔算最大但額最大，係定價中心。期權上 NVDA 短期 call 好活躍，MU 喺 $730 附近 call／put 都有，較似 CPI 前博弈。中期／長期：AI 基建需求未見被基本面證偽，但治理、12 月利率路徑同今晚 CoreWeave 對 neo-cloud 融資嘅驗證，會決定反彈質素。CPI 公布後，開盤可以同而家盤前價差好遠。解讀≠投資建議。\n\n【盤前資金短評（按額）】盤前最緊要睇額唔睇點數。NVDA 單隻盤前成交額約 $16.5 億，超過 MU、SPCX、TSLA、TSM 同 GOOGL 加總，顯示資金仍在用真倉消化黃仁勳調查，而唔係靜待開盤。Alphabet 雖然微升，額只約 $1 億出頭，較似避風同自研芯片下嘅相對配置。SPCX 額排前、價跌逾 2%，係星期一急升後嘅高位換手。整體呈現「道指有油價承接、納指同 AI 鏈先要過 CPI 同 NVDA 新聞關」。若 CPI 唔熱，QQQ 或有反抽，但 NVDA 治理陰霾未除，半導體同太空鏈反彈質素仍會被質疑。以上只係盤前資金解讀，唔等於投資建議。\n",
+        "themes": [
+          "盤前 ETF（Nasdaq 美東 08:08–08:09）：DIA $525.50（+0.41%）；SPY $753.15（+0.06%）；QQQ $676.35（−0.44%）",
+          "較早 Reuters 期貨（美東 07:21）：道指約 +0.32%、標普約 +0.02%、納指約 −0.34%；現金盤未開，冇官方現金指數",
+          "國債：2 年期升逾 7 bp 至 4.62%，10 年期升逾 3 bp 至 4.894%，30 年期約 5.27%；Waller 傾向 12 月加息，通脹若高過預期甚至考慮 50 bp",
+          "油價：Yahoo 美東 04:30 布倫特 $90.58（−2.15%）、WTI $85.24（−1.85%）；其後 Reuters／CNBC 指布倫特跌穿 $90（8 月以來首次）",
+          "今日：美東 08:30 公布 10 月 CPI（預期總指數按月 +0.3%、核心 +0.2%；BLS 今次不公布按年百分比）；收市後 CoreWeave；週四 AMAT／思科；週五 PPI；NVDA 業績 11/17。本稿寫於 CPI 公布前",
+          "NVDA 盤前 $177.30（−0.77%）額約 $16.47 億——專責股額冠軍；董事會獨立調查、FBI／股東訴訟報道",
+          "MU $720.82（−1.68%）額約 $5.20 億；SPCX $138.70（−2.37%）額約 $2.85 億；TSLA $372.97（−1.34%）額約 $1.65 億——均回吐星期一反彈",
+          "TSM $389.10（+0.12%）額約 $1.27 億偏穩；GOOGL $289.71（+0.54%）／GOOG $287.63（+0.56%）；Google 公布 TPU 8tx／8i Max",
+          "已核對盤前額序：NVDA 約 $16.47 億 > MU 約 $5.20 億 > AMD 約 $3.62 億 > SPCX 約 $2.85 億 > TSLA 約 $1.65 億，其後 TSM、英特爾、GOOGL、蘋果；未見齊全盤前二十大官方榜，不重貼上交易日二十大",
+          "判斷：開盤前「道指偏強、納指偏弱」；NVDA 額最大屬定價中心；CPI 後開盤或同盤前價差好遠（解讀≠投資建議）"
+        ],
+        "tickers": [
+          {
+            "sym": "MU",
+            "note": "盤前 $720.82（−1.68%，−$12.33，上收 $733.15）；量 72.20 萬股；額約 $5.20 億；星期一升 6.25% 後回吐",
+            "chg": "−1.68%",
+            "up": false
+          },
+          {
+            "sym": "NVDA",
+            "note": "盤前 $177.30（−0.77%，−$1.37，上收 $178.67）；量 929.03 萬股；額約 $16.47 億；治理調查下額最大",
+            "chg": "−0.77%",
+            "up": false
+          },
+          {
+            "sym": "TSLA",
+            "note": "盤前 $372.97（−1.34%，−$5.08，上收 $378.05）；量 44.24 萬股；額約 $1.65 億；星期一升 5.54% 後回吐",
+            "chg": "−1.34%",
+            "up": false
+          },
+          {
+            "sym": "TSM",
+            "note": "盤前 $389.10（+0.12%，+$0.48，上收 $388.73）；量 32.71 萬股；額約 $1.27 億；專責半導體相對最強",
+            "chg": "+0.12%",
+            "up": true
+          },
+          {
+            "sym": "GOOGL",
+            "note": "盤前 $289.71（+0.54%，+$1.56，上收 $288.15）；量 39.88 萬股；額約 $1.16 億；TPU 8tx／8i Max",
+            "chg": "+0.54%",
+            "up": true
+          },
+          {
+            "sym": "GOOG",
+            "note": "盤前 $287.63（+0.56%，+$1.62，上收 $286.01）；量 29.58 萬股；額約 $8,509 萬",
+            "chg": "+0.56%",
+            "up": true
+          },
+          {
+            "sym": "SPCX",
+            "note": "盤前 $138.70（−2.37%，−$3.37，上收 $142.07）；量 205.41 萬股；額約 $2.85 億；星期一升 5.81% 後回調最大",
+            "chg": "−2.37%",
+            "up": false
+          }
+        ]
+      },
       "hk": {
         "asOf": "2026-11-10 17:00（港時）· 五時收市",
         "summary": "【港股助手｜2026-11-10 17:00（港時）· 五時收市】分析≠投資建議。大市：恒指收 24557.04（+108.09，+0.44%；開 24621.13，高低 24675.53/24471.50）；科指收 4084.45（+43.72，+1.08%；開 4072.44，高低 4109.03/4055.10）。大市成交約 1781.75 億，較昨約 1737 億相若、仍然偏淡。南向全日整體淨賣約 27.38 億（早盤已有報道淨賣超 20 億）；四隻標的個股南向未能交叉核實。來源：港股助手五時收市簡報（公開行情）。\n\n9988.HK 阿里巴巴-W：收 101.60（−2.87%），開 104.10、高 104.70、低 100.50；成交約 1.054 億股、成交額約 107.11 億，約 1.23 倍近 5 日均量（約 8563 萬股），較 20 日均量約 1.51 倍，價跌而略偏放量。低見過 100.50，貼近約 100 但未跌穿，未觸發「跌穿約 100 兼放量」。BABA 上日收 105.38 美元（−3.72%）；美股尚未開市，盤前約 103.33（約 −1.94%），成交極淡、只作參考。業績預計 11 月 19 日。\n\n0981.HK 中芯國際：收 47.24（+2.61%），開 47.22、高 48.76、低 47.00；成交約 6351 萬股、成交額約 30.4 億，約 0.70 倍近 5 日均量（約 9145 萬股），縮量上升；午後由午前約 47.84 回吐部分升幅。低位仍高於近期低位 41.06。個股南向未核實（11 月 9 日淨買約 0.47 億，連 4 日淨買累計約 15.06 億）。論點止蝕（南向持續大額淨賣兼再破近期低位）未齊，唔主動提分批減倉。Q3 董事會預計 11 月 12 日。\n\n0941.HK 中國移動：收 81.05（−0.25%），開 81.25、高 81.55、低 80.90；成交約 979 萬股、成交額約 8.0 億，約 0.54 倍近 5 日均量，明顯縮量窄幅。未觸發約 75。\n\n1810.HK 小米集團-W：收 30.60（+1.66%），開 29.96、高 31.04、低 29.68；成交約 1.033 億股、成交額約 31.5 億，約 0.40 倍近 5 日均量（均量受 11 月 5 日放量拉高），較 20 日均量約 0.54 倍，縮量上升。暫未設觀察位，唔主動提減倉。\n\n期權（港交所十大，最後更新 11/10 16:44）：收市十大認購未見四隻標的。認沽：9988 11/13 到期 95 認沽最後 0.210、成交 3419 張（約 6.5% 價外，剩兩個交易日，唔建議追）；9988 12/30 到期 102.50 認沽最後 6.680、成交 2899 張（稍為價內，期權金約 6.57%）；1810 12/30 到期 32 認沽最後 2.850、成交 3359 張（約 4.6% 價內，期權金約 9.31%），同 25 認沽最後 0.350、成交 2063 張。0981／0941 未入十大。今日冇特別值得追嘅期權。\n\n觀察位：9988、0981、0941 均未觸發；1810 暫未設。分析≠投資建議。",
